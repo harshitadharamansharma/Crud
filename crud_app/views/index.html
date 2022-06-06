@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+
+    <!--from font awesome dcn cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!--Header--> 
+            <header id="header">
+                <nav>
+                   <div class="container">
+                       <div class = "text -center">
+                           <a href="/" class ="nav-band text-dark"> Hello World_  User Management System
+
+                           </a>
+                       </div>
+                   </div> 
+                </nav>
+            </header>
+
+    <!--/Header--> 
+
+    <!--Main Site-->
+<main id = "site-main">
+<div class="container">
+   <div class=" box-nav d-flex justify-between">
+       <a href = "/add-user" class="border-shadow">
+           <span class = "text-gradient"> New User <i class="fa-solid fa-user"></i></span>
+<!--svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><!--path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg></span>-->
+       </a>
+   </div>
+   <!--form handling-->
+   <form action ="/" method="POST">
+       <table class="table">
+           <thead class ="thread-dark">
+               <tr>
+                   <th>ID</th>
+                   <th>Name</th>                   
+                   <th>@Email</th>
+                   <th>Gender</th>
+                   <th>Status</th>
+                   <th>Action</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>1</td>
+                   <td>Username</td>
+                   <td>example@gmail.com</td>
+                   <td>Other</td>
+                   <td>Active</td>
+                   <td>
+                       <a href="#" class = "btn border-shadow update">
+                           <span class = "text-gradient"><i class="fas fa-pencil-alt">
+                        </i>
+                           </span>
+                       </a>
+                       <a class = "btn border-shadow delete">
+                        <span class = "text-gradient"><i class="fas fa-times">
+                     </i>
+                        </span>
+                    </a>
+                   </td>
+               </tr>
+           </tbody>
+       </table>
+   </form>
+</div>    
+</main>
+
+    <!--/Main Site-->
+
+    
+
+</body>
+</html>
